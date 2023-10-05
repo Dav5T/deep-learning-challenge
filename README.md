@@ -121,7 +121,6 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 
 ## Summary
-
 * Summarize the results of the machine learning models:<br/>
 *Overall the best model was Machine Learning Model 4-1. It has the best validation accuracy of 72.98%. I chose relu over tahnh as the activation function for majority of the models because relu tends to learn faster than tanh. I did use tanh for Model 4-2 to compare how it Model 3-1, it resulted in a worse validation accuracy. It probably could have performed better with more epoch. Following some of the reccommendations that we learned, adding more hidden layers, adding more neurons, adding more epochs, and trying different activation function, the best strategy I found was 3 hidden layers with less neurons, and adding GaussianNoise gave the best result. With the help of the graphs from TensorBoard, I was able to see how the model was performing based on the graphs. Reducing the epochs did not make sense and going over 100 epochs caused random spikes in the training loss.* 
 
