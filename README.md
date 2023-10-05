@@ -52,7 +52,7 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
     * **Output Layer:** 1 neuron, sigmoid 
     * **Epoch:** 100
       
-   https://github.com/Dav5T/deep-learning-challenge/blob/main/Images%20Loss%20and%20Accuracy/Machine%20Learning%20Model%201.png
+   ![alt text](https://github.com/Dav5T/deep-learning-challenge/blob/main/Images%20Loss%20and%20Accuracy/Machine%20Learning%20Model%201.png)
    
   * The results of Model 1-1 loss was 56.16% and the accuracy is 72.80% for the test data.Training accuracy mainly hung around 74% towards the end. This indicates that overfitting is not taking place. In addition to running the first model, I also ran a 2nd model in the same notebook to see if fewer neurons would have a significant effect on accuracy and it turns out it doesn't. There was slight drop resulting in a 72.52% validation accuracy. However, it did take a little longer for the training accuracy to acheive roughly a 73.6% accuracy. I chose Relu as the activation function since it is supposed to be a faster learner than tanh. 
 
