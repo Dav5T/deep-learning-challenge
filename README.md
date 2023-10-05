@@ -45,16 +45,18 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
     * **Output Layer:** 1 neuron, sigmoid 
     * **Epoch:** 100
  
-* Machine Learning Model 1-2:
+  * Machine Learning Model 1-2:
     * **Input Layer:** 43 neurons 
     * **Hidden Layer #1:** 10 neurons, relu
     * **Hidden Layer #2:** 15 neurons, relu
     * **Output Layer:** 1 neuron, sigmoid 
     * **Epoch:** 100
-
+      
+   https://github.com/Dav5T/deep-learning-challenge/blob/main/Images%20Loss%20and%20Accuracy/Machine%20Learning%20Model%201.png
+   
   * The results of Model 1-1 loss was 56.16% and the accuracy is 72.80% for the test data.Training accuracy mainly hung around 74% towards the end. This indicates that overfitting is not taking place. In addition to running the first model, I also ran a 2nd model in the same notebook to see if fewer neurons would have a significant effect on accuracy and it turns out it doesn't. There was slight drop resulting in a 72.52% validation accuracy. However, it did take a little longer for the training accuracy to acheive roughly a 73.6% accuracy. I chose Relu as the activation function since it is supposed to be a faster learner than tanh. 
 
-* Machine Learning Model 2-1:
+  * Machine Learning Model 2-1:
     * **Input Layer:** 43 neurons 
     * **Hidden Layer #1:** 129 neurons, relu
     * **Hidden Layer #2:** 86 neurons, relu
@@ -71,10 +73,12 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
     * **Output Layer:** 1 neuron, sigmoid 
     * **Epoch:** 100
 
+   https://github.com/Dav5T/deep-learning-challenge/blob/main/Images%20Loss%20and%20Accuracy/Machine%20Learning%20Model%202.png
+
   * The results of Model 2-1 validation loss was 60.04% and the validation accuracy is 72.86% for the test data.Training accuracy mainly hung around 74.1% towards the end. For Model 2-2, validation accuracy was 72.82% and a loss of 57.37%. In this case, the training accuracy also lingered around 74%. Overall, increasing the number of hidden layer did not add much value to the accuracy. Increasing the number of neurons and number of hidden layers to 3 did help increase validation accuracy by 0.6%. After looking at the graph, it seems like 100 epoch is sufficient as we can start to seem some huge spikes in loss as we approach 120 epoch. 
 
 
-* Machine Learning Model 3-1:
+  * Machine Learning Model 3-1:
     * **Input Layer:** 43 neurons 
     * **Hidden Layer #1:** 86 neurons, relu, 
     * **Hidden Layer #2:** 30 neurons, relu, GaussianNoise 0.1
@@ -90,10 +94,12 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
     * **Output Layer:** 1 neuron, sigmoid 
     * **Epoch:** 100
 
+   https://github.com/Dav5T/deep-learning-challenge/blob/main/Images%20Loss%20and%20Accuracy/Machine%20Learning%20Model%203.png
+
   * The results for MOdel 3-1 has the highest validation accuracy so far of 72.93% and the lowest loss of 55.8%. I decided to add some noise to the 2nd and 3rd hidden layer because I noticed thatt as the validation accuracy increased, so did the validation loss. Based on the graph and comparing the accuracy of the test and trainig data, there isn't a strong indication of overfitting. However, adding noise to the data almost guarentees that the model will not overfit. Model 3-2, validation accuary decreased by a tiny bit to 72.84%. Therefore, adding more neurons doesn't make a significant difference. 
 
 
-* Machine Learning Model 4-1:
+  * Machine Learning Model 4-1:
     * **Input Layer:** 43 neurons 
     * **Hidden Layer #1:** 80 neurons, relu, 
     * **Hidden Layer #2:** 30 neurons, relu, GaussianNoise 0.2
@@ -109,6 +115,8 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
     * **Output Layer:** 1 neuron, sigmoid 
     * **Epoch:** 100
 
+   https://github.com/Dav5T/deep-learning-challenge/blob/main/Images%20Loss%20and%20Accuracy/Machine%20Learning%20Model%204.png
+  
   * The results for Model 4-1 validation accuracy was 72.98%, however, with a higher loss of 56.1%. This is so far the best accuracy that I have been able to achieve. For Model 4-2, accuracy was worse than Model 3-1. It had a validation accuracy of 72.75%. I wanted to see if tahn would perform better than using relu since it had given the best result before running all of the models above. 
 
 
